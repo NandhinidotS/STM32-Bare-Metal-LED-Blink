@@ -2,7 +2,7 @@
 
 ![Board](https://img.shields.io/badge/Board-NUCLEO--F446RE-blue)
 ![MCU](https://img.shields.io/badge/MCU-STM32F446RE-green)
-![IDE](https://img.shields.io/badge/IDE-Keil%20MDK-orange)
+![IDE](https://img.shields.io/badge/IDE-STM32CubeIDE-03234B)
 ![Language](https://img.shields.io/badge/Language-Embedded%20C-lightgrey)
 
 A bare-metal LED blink project for the **STM32 NUCLEO-F446RE** that controls the on-board LED (**LD2 on PA5**) using **only bitwise operators and direct register access**. It uses no CubeMX, no HAL and no LL drivers, so the code shows exactly what happens inside the microcontroller.
@@ -31,8 +31,7 @@ The sequence then repeats forever.
 - USB cable for power and programming (ST-LINK)
 
 **Software**
-- Keil MDK (µVision) with Arm Compiler 6
-- STM32F4 Device Family Pack (DFP)
+- STM32CubeIDE (Empty project, no CubeMX configuration)
 
 ---
 
@@ -132,5 +131,3 @@ Starting from OFF, an odd number of toggles leaves the LED ON. The final **CHECK
 - Switch the delay to a SysTick interrupt (non-blocking)
 - Raise the system clock to 180 MHz using the PLL
 - Add a push button input on PC13
-
----
